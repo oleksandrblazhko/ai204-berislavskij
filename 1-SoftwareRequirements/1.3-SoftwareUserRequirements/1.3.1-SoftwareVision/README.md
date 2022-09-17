@@ -1,1 +1,2 @@
 ### Бачення програмного продукту
+**FOR** full-aged citizens with a bit of free time **WHO** like to read, declaim and discuss love lyrics in company of other people **THE** "Lyricly" **IS** mobile devices software product **THAT** allows users to organise online and offline meetings with integration of health control (offline) and IoT Noise control system **UNLIKE** other services or package software products like Poetry Foundation App **OUR** product provides all you need to share your passion for literature with others even for free.
