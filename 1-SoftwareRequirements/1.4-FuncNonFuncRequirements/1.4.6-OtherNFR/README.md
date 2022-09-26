@@ -37,7 +37,7 @@
         <tr>
             <td></td>
             <td>NFR1.9</td>
-            <td>Software Interface</td>
+            <td>Data Transfer Interface</td>
             <td>Пропускна здатність серверу повинна становити не менше 1 Gb/s</td>
         </tr>
     </tbody>
