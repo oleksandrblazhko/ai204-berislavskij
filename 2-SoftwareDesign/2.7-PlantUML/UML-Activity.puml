@@ -1,0 +1,18 @@
+@startuml
+
+title Activity Diagram of User.getBookings() method
+
+start
+
+:Program finds all booking requests; 
+note right: Using LiteratureDAO repository
+
+if (Was Requests Found?) then (yes)
+  :Sending requests list;
+else (no)
+  :There no requests!;
+endif
+
+stop
+
+@enduml
