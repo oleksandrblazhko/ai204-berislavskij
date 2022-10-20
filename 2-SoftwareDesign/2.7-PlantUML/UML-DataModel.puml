@@ -1,0 +1,40 @@
+@startuml
+
+title Example of Relation Schema
+
+hide circle
+
+entity "Appartment" as ta {
+    (PK) id_appartment
+    --
+    address
+    user_id
+    size
+    price
+    description
+    max_people
+}
+
+entity "User" as tu {
+    (PK) id_user
+    --
+    (FK) role_id
+    name
+    surname
+    balance
+    subscription
+}
+
+entity "Booking" as tb {
+    (PK, FK) id_user
+    (PK, FK) id_appartment
+    --
+    time_period
+    status
+}
+
+tb }-- tu
+tu --{ ta
+tb }-- ta
+
+@enduml
