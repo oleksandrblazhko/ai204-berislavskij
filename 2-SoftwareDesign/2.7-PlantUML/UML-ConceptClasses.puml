@@ -1,0 +1,13 @@
+@startuml
+
+title Cpncept Classes Diagram 
+
+Class User
+Class Booking
+Class Appartment
+
+User"1" -- "*"Appartment: has >
+User"1" -- "*"Booking: creates >
+Booking"*" -- "1"Appartment: involves >
+
+@enduml
