@@ -1,0 +1,6 @@
+|Опис вхідних умов|Правильний/неправильний <br> клас еквівалентності|Опис значень вхідних даних|
+|:-|:-:|:-|
+|1) За значенням *bookingId* знайдено бронювання<br>2) Бронювання зі вказаним *bookingId* має статус "Pending"<br>3) Значення *status* співпадає з одним із: "Accepted", "Denied";| Правильний | *literatureId* = *23* <br> *booking.status* = *Pending*<br> *status* = *Denied*|
+|1) За значенням *bookingId* знайдено бронювання<br>2) Бронювання зі вказаним *bookingId* має статус "Pending"<br>3) Значення *status* співпадає з одним із: "Accepted", "Denied";| Неправильний | *literatureId* = *-23465563423* <br> *booking.status* = *Pending*<br> *status* = *Denied*|
+|1) За значенням *bookingId* знайдено бронювання<br>2) Бронювання зі вказаним *bookingId* **НЕ** має статус "Pending"<br>3) Значення *status* співпадає з одним із: "Accepted", "Denied";| Неправильний | *literatureId* = *23* <br> *booking.status* = *Accepted*<br> *status* = *Denied*|
+|1) За значенням *bookingId* знайдено бронювання<br>2) Бронювання зі вказаним *bookingId* має статус "Pending"<br>3) Значення *status* **НЕ** співпадає з одним із: "Accepted", "Denied";| Неправильний | *literatureId* = *23* <br> *booking.status* = *Pending*<br> *status* = *idktbh*|
