@@ -1,4 +1,4 @@
-Специфікація методу User.reply(Long bookingId, StatusEnum status):
+Специфікація методу FR1.4 User.reply(Long bookingId, StatusEnum status):
 
 1) Вхідні параметри:
 
