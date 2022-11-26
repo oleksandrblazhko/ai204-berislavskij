@@ -1,0 +1,11 @@
+create table apartment (id_apartment int8 not null, address varchar(255), description varchar(255), max_people int4, price float8, size float8, owner_id int8, primary key (id_apartment));
+create table booking (apartment_id int8 not null, user_id int8 not null, booking_status int4, end_time timestamp, start_time timestamp, primary key (apartment_id, user_id));
+create table users (id_user  bigserial not null, balance float8, email varchar(255), mobile varchar(255), name varchar(255), role varchar(255), surname varchar(255), primary key (id_user));
+alter table if exists users add constraint UK_6dotkott2kjsp8vw4d0m25fb7 unique (email);
+alter table if exists users add constraint UK_63cf888pmqtt5tipcne79xsbm unique (mobile);
+alter table if exists apartment add constraint FKhqtbxiilw0ra8ujkis9bry4l8 foreign key (owner_id) references users;
+alter table if exists booking add constraint FKtf8mt0474jyw0it7iabmsh6t3 foreign key (apartment_id) references apartment;
+alter table if exists booking add constraint FK7udbel7q86k041591kj6lfmvw foreign key (user_id) references users;
+insert into users(id_user, balance, email) values (1, 1, 'user1@example.com');
+insert into users(id_user, balance, email) values (2, 2, 'user2@example.com');
+insert into users(id_user, balance, email) values (3, 3, 'user3@example.com');
